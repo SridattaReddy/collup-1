@@ -3,10 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col text-center mt-4">
+          <img src="/img/fireworks.png">
           <h2>
-            Welcome to your dashboard
+            Welcome {{ Auth::user()->name }}
           </h2>
+          <a href="/updates/create" class="btn btn-danger">Create a new update</a>
       </div>
     </div>
 </div>
